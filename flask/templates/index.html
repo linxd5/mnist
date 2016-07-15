@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link href='{{ url_for('static', filename='style.css') }}' rel='stylesheet' type='text/css'/>
+    </head>
+    <body>
+        <div id='all_content'>
+            <div id='overall_num'>
+                <div> test_images_num: 10000 </div>
+                <div> wrong_images_num: {{ wrong_images_num }} </div>
+            </div>
+            {% for wrong_image_info in wrong_images_info %}
+                <div class='detailed_info'>
+                    <img src={{ url_for('static', filename=wrong_image_info.name) }} />
+                    <div>predict_value: {{ wrong_image_info['predict_value'] }}</div>
+                    <div>actual_value: {{ wrong_image_info['actual_value'] }}</div>
+                </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>

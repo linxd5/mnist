@@ -1,0 +1,7 @@
+Extracting MNIST_data/train-images-idx3-ubyte.gz
+Extracting MNIST_data/train-labels-idx1-ubyte.gz
+Extracting MNIST_data/t10k-images-idx3-ubyte.gz
+Extracting MNIST_data/t10k-labels-idx1-ubyte.gz
+training finished
+Tensor("MergeSummary/MergeSummary:0", shape=(), dtype=string)
+test accuracy 0.98940

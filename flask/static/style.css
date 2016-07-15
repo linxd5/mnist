@@ -1,0 +1,25 @@
+
+div#all_content {
+    width: 800px;
+    margin: 0 auto;
+}
+
+div#all_content div#overall_num {
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+    margin: 50px;
+}
+
+div#all_content div.detailed_info {
+    float: left;
+    margin: 30px;
+}
+
+div#all_content div.detailed_info img {
+    width: 112px;
+}
+
+div#all_content div.detailed_info div {
+    margin: 5px;
+}
